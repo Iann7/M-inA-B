@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+<h1>Leave a message,<br>
+  receive a message</h1>
+ <% if(sent === 0 ){ %>
+
+   <div class="box">
+     <form class="" action="/" method="post">
+       <h3>Title</h3>
+       <input class="input-group" type="text" name="title_input" value="">
+       <h3>Body</h3>
+       <div class="form-group">
+         <textarea class="input-group" name="body_input" rows="8" cols="80"></textarea>
+       </div>
+       <button type="submit" name="button" class="button btn btn-lg btn-warning">SEND</button>
+       </form>
+   </div>
+
+ <% } else  if (sent === 1){ %>
+   <div class="box">
+     <h3><%= strangerTitle %></h3>
+    <p><%= strangerMessage %></p>
+    <form class="" action="/" method="get">
+      <button class="btn btn-warning"type="submit" name="button">Go back</button>
+    </form>
+   </div>
+<% }  else { %>
+  <h1>ERROR</h1>
+  <p> It seems that you've left a blank input in our form :c </p>
+  <form class="" action="/" method="get">
+    <button class="btn btn-warning"type="submit" name="button">Go back</button>
+  </form>
+
+<% }%>
+
+<%- include('partials/footer') %>

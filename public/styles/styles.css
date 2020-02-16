@@ -1,0 +1,42 @@
+body{
+  background-color:#b8e8c9 ;
+  text-align:center;
+}
+h1{
+font-family: 'Rosarivo', serif;
+font-weight: bold;
+padding-top:4%;
+}
+p,h3{
+font-family: 'Libre Baskerville', serif;
+font-weight: bold;
+margin:1% 0%;
+}
+
+.box{
+  padding: 2%;
+  margin : 4% 13% 1% 13%;
+  background-color: #D5B78B;
+  border-radius: 10px;
+}
+
+textarea,input{
+    background-color: #D5B78B;
+   border-color:#606060;
+    border-style:solid;
+    font-family:'Libre Baskerville',serif;
+    font-weight:bold;
+}
+
+
+.button{
+  font-family:'Rosarivo',serif;
+}
+/* HEADER FOOTER */
+.fas{
+  display: inline-block;
+}
+
+.copyright{
+  display: inline-block;
+}
